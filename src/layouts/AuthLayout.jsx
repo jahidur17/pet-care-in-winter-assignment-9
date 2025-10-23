@@ -4,9 +4,9 @@ import Navbar from '../components/Navbar';
 
 const AuthLayout = () => {
     return (
-      <div className="min-h-screen flex flex-col justify-center items-center bg-orange-50">
+      <div className="min-h-screen flex flex-col  bg-orange-50">
         <Navbar></Navbar>
-        <div>
+        <div className="flex-grow flex justify-center items-center w-full">
           <Outlet />
         </div>
       </div>
