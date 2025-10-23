@@ -42,11 +42,8 @@ const AuthProvider = ({ children }) => {
   };
 
   // 🔹 Update User Profile (displayName, photoURL)
-  const updateUserProfile = (name, photo) => {
-    return updateProfile(auth.currentUser, {
-      displayName: name,
-      photoURL: photo,
-    });
+  const updateUserProfile = (updatedData) => {
+    return updateProfile(auth.currentUser, updatedData)
   };
 
   // 🔹 Google SignIn
@@ -74,6 +71,7 @@ const AuthProvider = ({ children }) => {
     logOut,
     updateUserProfile,
     signInWithGoogle,
+    setUser,
   };
 
   return (
