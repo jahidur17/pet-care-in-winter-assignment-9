@@ -1,21 +1,20 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaCat, FaCalendarCheck } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-600 text-white py-8">
+    <footer className="bg-orange-600 text-white py-8 rounded-xl w-11/12 mx-auto">
       <div className="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        {/* Contact Info */}
         <div className="text-center md:text-left">
           <h3 className="text-xl font-bold mb-2">
             WarmPaws – Pet Care in Winter
           </h3>
-          <p>Email: info@warmpaws.com</p>
+          <p>Email: jahidurrahman9117@gmail.com</p>
           <p>Phone: +880 123 456 789</p>
-          <p>Address: Dhaka, Bangladesh</p>
+          <p>present-Address: Pabna, Bangladesh</p>
+          <p>permanent-Address: Rajshahi, Bangladesh</p>
         </div>
 
-        {/* Social Links */}
         <div className="flex gap-4 text-2xl">
           <a
             href="https://facebook.com"
@@ -38,17 +37,37 @@ const Footer = () => {
           >
             <FaInstagram />
           </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube />
+          </a>
+          <a
+            href="https://www.battersea.org.uk/pet-advice/cat-care-advice/winter-cat-care"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaCat />
+          </a>
         </div>
 
-        {/* Policies */}
-        <div className="text-center md:text-right">
+        <div className="text-center md:text-right flex gap-4">
           <p>
-            <a href="/privacy" className="hover:underline">
+            <a href="/privacy-policy" className="hover:underline text-yellow-400">
               Privacy Policy
             </a>
           </p>
           <p>
-            <a href="/terms" className="hover:underline">
+            <a href="/terms" className="hover:underline text-blue-700">
               Terms & Conditions
             </a>
           </p>
