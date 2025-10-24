@@ -10,6 +10,7 @@ import AuthLayout from "../layouts/AuthLayout";
 import PrivateRoute from "./PrivateRoute";
 import Terms from "../pages/Terms";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import ForgotPassword from "../pages/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         path: "/auth/register",
         element: <Register></Register>,
       },
+      {
+        path:"/auth/forgot-password",
+        element:<ForgotPassword></ForgotPassword>
+      },
     ],
   },
   {
@@ -60,7 +65,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/privacy-policy",
-    element:<PrivacyPolicy></PrivacyPolicy>
+    element: <PrivacyPolicy></PrivacyPolicy>,
   },
 
   {

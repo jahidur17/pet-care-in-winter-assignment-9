@@ -1,21 +1,22 @@
-import React, { useContext, useState,   } from "react";
+import React, { useContext, useRef, useState,   } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router";
 
 const Login = () => {
   const [error, setError] = useState("");
   const { loginUser, signInWithGoogle } = useContext(AuthContext);
-    const location = useLocation();
-  
+  const location = useLocation();
+  const [email, setEmail] = useState(""); // ✅ track email
 
-  
+  const emailRef = useRef(null);
+
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    // console.log(email, password);
 
     loginUser(email, password)
       .then((result) => {
@@ -48,9 +49,13 @@ const Login = () => {
             <label className="label">Email</label>
             <input
               type="email"
+              ref={emailRef}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               name="email"
               className="input"
               placeholder="Email"
+              required
             />
             <label className="label">Password</label>
             <input
@@ -58,9 +63,16 @@ const Login = () => {
               name="password"
               className="input"
               placeholder="Password"
+              required
             />
             <div>
-              <a className="link link-hover">Forgot password?</a>
+              <Link
+                to="/auth/forgot-password"
+                state={{ email }}
+                className="link link-hover"
+              >
+                Forgot password?
+              </Link>
             </div>
             <button type="submit" className="btn btn-neutral mt-4">
               Login

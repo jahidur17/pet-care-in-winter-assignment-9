@@ -9,6 +9,7 @@ import {
   updateProfile,
   GoogleAuthProvider,
   signInWithPopup,
+  sendPasswordResetEmail,
 } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
@@ -43,14 +44,20 @@ const AuthProvider = ({ children }) => {
 
   // 🔹 Update User Profile (displayName, photoURL)
   const updateUserProfile = (updatedData) => {
-    return updateProfile(auth.currentUser, updatedData)
+    return updateProfile(auth.currentUser, updatedData);
   };
 
   // 🔹 Google SignIn
-  
+
   const signInWithGoogle = () => {
     setLoading(true);
     return signInWithPopup(auth, provider);
+  };
+
+  //  forgot password
+
+  const forgotPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
   };
 
   // 🔹 Track User State
@@ -72,6 +79,7 @@ const AuthProvider = ({ children }) => {
     updateUserProfile,
     signInWithGoogle,
     setUser,
+    forgotPassword,
   };
 
   return (
