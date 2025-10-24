@@ -7,12 +7,14 @@ import "swiper/css/pagination";
 import img1 from "../assets/j.jpg";
 import img2 from "../assets/jj.jpg";
 import img3 from "../assets/jjj.jpg";
+import img4 from "../assets/jjjj.jpg";
 
 const HeroSlider = () => {
   const slides = [
     { img: img1, text: "Keep Your Dog Warm This Winter ❄️" },
     { img: img2, text: "Soft Jackets for Your Lovely Cats 🐱" },
     { img: img3, text: "Winter Grooming & Care Packages 🧼" },
+    { img: img4, text:  "Winter Nutrition & Health Tips 🍲"}
   ];
 
   return (
@@ -22,7 +24,7 @@ const HeroSlider = () => {
         autoplay={{ delay: 2500 }}
         pagination={{ clickable: true }}
         loop={true}
-        className="h-[400px] rounded-xl shadow-lg"
+        className="h-[200px] rounded-2xl shadow-2xl"
       >
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx}>
@@ -34,9 +36,9 @@ const HeroSlider = () => {
                 className="w-full h-full object-cover rounded-xl"
               />
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-30 rounded-xl"></div>
+              <div className="absolute inset-0 bg-white bg-opacity-30 rounded-xl"></div>
               {/* Text */}
-              <h2 className="absolute text-3xl md:text-4xl font-bold text-white z-10 text-center px-4">
+              <h2 className="absolute text-3xl md:text-4xl font-bold text-black z-10 text-center px-4">
                 {slide.text}
               </h2>
             </div>

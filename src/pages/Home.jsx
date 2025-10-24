@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeroSlider from "../components/HeroSlider";
+import WinterCareTips from "../components/WinterCareTips";
+import ExpertVets from "../components/ExpertVets";
 
 const Home = () => {
   const [services, setServices] = useState([]);
@@ -26,7 +28,7 @@ const Home = () => {
           {services.map((service) => (
             <div
               key={service.serviceId}
-              className="card bg-base-100 shadow-xl border hover:shadow-2xl transition-all duration-300"
+              className="card bg-base-100 shadow-2xl hover:shadow-2xl transition-all duration-300"
             >
               <figure>
                 <img
@@ -55,6 +57,8 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <WinterCareTips></WinterCareTips>
+      <ExpertVets></ExpertVets>
     </div>
   );
 };
