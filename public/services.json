@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo to prevent dryness.",
+    "image": "https://images.pexels.com/photos/1174081/pexels-photo-1174081.jpeg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Warm Bedding & Blanket Setup",
+    "providerName": "FurHaven Comfort",
+    "providerEmail": "support@furhaven.com",
+    "price": 18,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Soft insulated bedding and heated blankets for small and large pets during cold nights.",
+    "image": "https://images.pexels.com/photos/1870301/pexels-photo-1870301.jpeg",
+    "category": "Comfort"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Nutritional Winter Diet Plan",
+    "providerName": "PetCare Nutritionist",
+    "providerEmail": "nutrition@petcare.com",
+    "price": 22,
+    "rating": 4.9,
+    "slotsAvailable": 5,
+    "description": "A balanced diet consultation for your pet to boost immunity and maintain energy in winter.",
+    "image": "https://images.pexels.com/photos/34418146/pexels-photo-34418146.jpeg",
+    "category": "Nutrition"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Health Check-up",
+    "providerName": "PawWell Veterinary Clinic",
+    "providerEmail": "clinic@pawwell.com",
+    "price": 40,
+    "rating": 5.0,
+    "slotsAvailable": 2,
+    "description": "Full health assessment including fur, paw, and joint care for cold-weather readiness.",
+    "image": "https://media.istockphoto.com/id/1477761171/photo/owner-feeding-her-pet-at-home.jpg?s=1024x1024&w=is&k=20&c=4rTurvvLSlYaZ3PC9YxJPWrBjOEIT9VN35ZSbGyP5dE=",
+    "category": "Healthcare"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Snow Walk & Exercise Training",
+    "providerName": "HappyTail Trainers",
+    "providerEmail": "train@happytail.com",
+    "price": 28,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Guided snow walk and light winter exercise sessions to keep pets active and safe outdoors.",
+    "image": "https://images.pexels.com/photos/34422349/pexels-photo-34422349.jpeg",
+    "category": "Training"
+  }
+]

@@ -42,8 +42,8 @@ const Register = () => {
           })
           .catch((error) => {
             // An error occurred
-            console.log(error);
-            setError(user);
+            console.log(error.message);
+            setError(error.message);
           });
       })
       .catch((error) => {
