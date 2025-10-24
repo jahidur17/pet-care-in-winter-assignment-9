@@ -1,7 +1,5 @@
-// src/components/ExpertVets.jsx
 import React from "react";
 
-// Static data for experts
 const experts = [
   {
     id: 1,

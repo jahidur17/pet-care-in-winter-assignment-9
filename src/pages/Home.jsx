@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import HeroSlider from "../components/HeroSlider";
 import WinterCareTips from "../components/WinterCareTips";
 import ExpertVets from "../components/ExpertVets";
+import { Navigate, useNavigate } from "react-router";
 
 const Home = () => {
   const [services, setServices] = useState([]);
+  const navigate = useNavigate(); // <-- useNavigate hook
 
   useEffect(() => {
     fetch("services.json")
@@ -47,8 +49,14 @@ const Home = () => {
                 <p className="font-semibold text-gray-800">
                   Price: ${service.price}
                 </p>
-                <div className="card-actions justify-end mt-3">
-                  <button className="btn btn-sm bg-orange-500 hover:bg-orange-600 text-white">
+                <div className="card-actions flex justify-between items-center mt-3">
+                  <span className="text-xl font-semibold text-blue-600">
+                    {service.category}
+                  </span>
+                  <button
+                    onClick={() => navigate(`/services/${service.serviceId}`)}
+                    className="btn btn-sm bg-orange-500 hover:bg-orange-600 text-white"
+                  >
                     View Details
                   </button>
                 </div>

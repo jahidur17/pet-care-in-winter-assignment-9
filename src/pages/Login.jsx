@@ -5,7 +5,8 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const [error, setError] = useState("");
-  const { loginUser, signInWithGoogle } = useContext(AuthContext);
+  const { loginUser, signInWithGoogle, setUser, setLoading } =
+    useContext(AuthContext);
   const location = useLocation();
   const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -15,6 +16,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
+    setLoading(true)
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
@@ -22,7 +24,8 @@ const Login = () => {
 
     loginUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
+        setUser(result.user);
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
@@ -32,9 +35,12 @@ const Login = () => {
   };
 
   const handleGoogleLogin = () => {
+    setLoading(true)
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
+        setUser(result.user);
+        
         
         navigate("/");
       })
@@ -44,6 +50,7 @@ const Login = () => {
   };
 
   const handleTogglePasswordShow = (e) => {
+    setLoading(true);
     e.preventDefault();
     setShowPassword(!showPassword);
   };
