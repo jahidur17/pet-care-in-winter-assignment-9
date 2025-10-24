@@ -1,12 +1,14 @@
-import React, { useContext, useRef, useState,   } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const [error, setError] = useState("");
   const { loginUser, signInWithGoogle } = useContext(AuthContext);
   const location = useLocation();
-  const [email, setEmail] = useState(""); // ✅ track email
+  const [email, setEmail] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const emailRef = useRef(null);
 
@@ -33,11 +35,17 @@ const Login = () => {
     signInWithGoogle()
       .then((result) => {
         console.log(result.user);
+        
         navigate("/");
       })
       .catch((error) => {
         alert(error.message);
       });
+  };
+
+  const handleTogglePasswordShow = (e) => {
+    e.preventDefault();
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -57,14 +65,22 @@ const Login = () => {
               placeholder="Email"
               required
             />
-            <label className="label">Password</label>
-            <input
-              type="password"
-              name="password"
-              className="input"
-              placeholder="Password"
-              required
-            />
+            <div className="relative">
+              <label className="label">Password</label>
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                className="input"
+                placeholder="Password"
+                required
+              />
+              <button
+                onClick={handleTogglePasswordShow}
+                className="btn btn-xs absolute top-6.5 right-6"
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
+            </div>
             <div>
               <Link
                 to="/auth/forgot-password"
