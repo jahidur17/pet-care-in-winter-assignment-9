@@ -26,18 +26,26 @@ const router = createBrowserRouter([
         element: <ServicesLayout></ServicesLayout>,
         children: [
           {
-            path:":id",
-            element: <Services></Services>,
+            index: true,
+            element: (
+              <PrivateRoute>
+                <Services></Services>
+              </PrivateRoute>
+            ),
           },
+          // {
+          //   path: "service/:id",
+          //   element: (
+          //     <PrivateRoute>
+          //       <Service />
+          //     </PrivateRoute>
+          //   ),
+          // },
         ],
       },
       {
         path: "profile",
-        element: (
-          <PrivateRoute>
-            <Profile></Profile>
-          </PrivateRoute>
-        ),
+        element: <Profile></Profile>,
       },
     ],
   },
@@ -54,8 +62,8 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path:"/auth/forgot-password",
-        element:<ForgotPassword></ForgotPassword>
+        path: "/auth/forgot-password",
+        element: <ForgotPassword></ForgotPassword>,
       },
     ],
   },
