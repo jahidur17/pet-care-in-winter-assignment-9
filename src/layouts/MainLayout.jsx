@@ -13,7 +13,7 @@ const MainLayout = () => {
         </nav>
         <main className=" p-4">
           {state =='loading' ?<Loading/> : <Outlet></Outlet>}
-          <Outlet></Outlet>
+         
         </main>
         <footer>
             <Footer></Footer>
