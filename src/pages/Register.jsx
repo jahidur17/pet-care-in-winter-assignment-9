@@ -40,7 +40,7 @@ const Register = () => {
             navigate("/");
           })
           .catch((error) => {
-            console.log(error.message);
+            // console.log(error.message);
             setError(error.message);
           });
       })
@@ -52,7 +52,8 @@ const Register = () => {
   const handleGoogleLogin = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        const user =result.user;
+        // console.log(user);
         navigate("/");
       })
       .catch((error) => {
