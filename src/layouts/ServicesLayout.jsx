@@ -4,9 +4,11 @@ import { Outlet } from 'react-router';
 const ServicesLayout = () => {
     return (
       <div className="p-10">
-        
-          <Outlet></Outlet>
-       
+        <Suspense
+          fallback={<p className="text-center text-gray-500">Loading...</p>}
+        >
+          <Outlet />
+        </Suspense>
       </div>
     );
 };

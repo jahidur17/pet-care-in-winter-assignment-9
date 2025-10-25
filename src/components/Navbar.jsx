@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FaCat } from "react-icons/fa";
-import catImg from "../assets/images.jpeg"
+import catImg from "../assets/images.jpeg";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -53,17 +53,14 @@ const Navbar = () => {
   return (
     <nav className="bg-white w-11/12 mx-auto shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
-        {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src={catImg} alt="WarmPaws" className="w-10 h-10" />
 
           <span className="font-bold text-xl text-orange-600">WarmPaws</span>
         </Link>
 
-        {/* Nav Links */}
         <ul className="hidden md:flex gap-6 text-gray-700">{navLinks}</ul>
 
-        {/* User Section */}
         <div className="flex items-center gap-4">
           {user ? (
             <div className="relative group">
@@ -72,14 +69,13 @@ const Navbar = () => {
                 alt="User Avatar"
                 className="w-10 h-10 rounded-full border cursor-pointer"
               />
-              {/* Hover Display Name */}
+
               <div className="absolute top-12 left-1/2 -translate-x-1/2 bg-white border px-3 py-1 rounded-md shadow-md hidden group-hover:block">
                 <p className="text-sm text-gray-700">{user.displayName}</p>
               </div>
             </div>
           ) : null}
 
-          {/* Login / Register / Logout Buttons */}
           {user ? (
             <button
               onClick={handleLogout}
@@ -106,7 +102,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Nav */}
       <div className="md:hidden flex justify-center py-2 border-t">
         <ul className="flex gap-4 text-gray-700">{navLinks}</ul>
       </div>

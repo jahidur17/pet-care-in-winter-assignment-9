@@ -1,9 +1,14 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Terms = () => {
   return (
     <div className="w-full mx-auto py-10 text-center bg-base-100   shrink-0 shadow-2xl">
-      <h1 className="text-3xl font-bold mb-4 text-blue-500">Terms & Conditions</h1>
+      <Navbar></Navbar>
+      <h1 className="text-3xl font-bold mb-4 p-10 pb-5 text-blue-500">
+        Terms & Conditions
+      </h1>
       <p className="text-gray-700 leading-relaxed font-semibold">
         Welcome to WarmPaws! These terms and conditions outline the rules and
         regulations for using our Pet Care in Winter services.
@@ -15,8 +20,11 @@ const Terms = () => {
           We may update these terms at any time, so please review regularly.
         </li>
       </ol>
+      <Footer></Footer>;
     </div>
   );
 };
+ 
+
 
 export default Terms;

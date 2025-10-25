@@ -1,7 +1,5 @@
-// src/components/WinterCareTips.jsx
 import React from "react";
 
-// Static/Fake JSON data
 const winterTips = [
   {
     id: 1,

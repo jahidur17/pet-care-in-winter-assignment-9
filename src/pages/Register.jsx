@@ -12,26 +12,25 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    //  console.log(e.target);
+
     const form = e.target;
     const name = form.name.value;
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
-    //  console.log({ name, photo, email, password });
+
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
-    if(!passwordRegex.test(password)){
-      // console.log("password don mached")
+    if (!passwordRegex.test(password)) {
       setError(
         "Password must be at least 6 characters and include both uppercase and lowercase letters."
       );
-        return;
+      return;
     }
 
     registerUser(email, password)
       .then((result) => {
         const user = result.user;
-        //    console.log(user);
+
         updateUserProfile({
           displayName: name,
           photoURL: photo,
@@ -41,13 +40,11 @@ const Register = () => {
             navigate("/");
           })
           .catch((error) => {
-            // An error occurred
             console.log(error.message);
             setError(error.message);
           });
       })
       .catch((error) => {
-        //    const errorCode = error.code;
         const errorMessage = error.message;
         alert(errorMessage);
       });
@@ -63,10 +60,10 @@ const Register = () => {
       });
   };
 
-  const handleTogglePasswordShow = (e) =>{
-     e.preventDefault();
-     setShowPassword(!showPassword);
-  }
+  const handleTogglePasswordShow = (e) => {
+    e.preventDefault();
+    setShowPassword(!showPassword);
+  };
 
   return (
     <div className="bg-white shadow-lg rounded-2xl p-8 w-96">

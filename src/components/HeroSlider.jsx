@@ -14,7 +14,7 @@ const HeroSlider = () => {
     { img: img1, text: "Keep Your Dog Warm This Winter ❄️" },
     { img: img2, text: "Soft Jackets for Your Lovely Cats 🐱" },
     { img: img3, text: "Winter Grooming & Care Packages 🧼" },
-    { img: img4, text:  "Winter Nutrition & Health Tips 🍲"}
+    { img: img4, text: "Winter Nutrition & Health Tips 🍲" },
   ];
 
   return (
@@ -29,15 +29,12 @@ const HeroSlider = () => {
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx}>
             <div className="relative h-full flex items-center justify-center">
-              {/* Image */}
               <img
                 src={slide.img}
                 alt={slide.text}
                 className="w-full h-full object-cover rounded-xl"
               />
-              {/* Overlay */}
               <div className="absolute inset-0 bg-white bg-opacity-30 rounded-xl"></div>
-              {/* Text */}
               <h2 className="absolute text-3xl md:text-4xl font-bold text-black z-10 text-center px-4">
                 {slide.text}
               </h2>

@@ -8,7 +8,7 @@ const Login = () => {
   const { loginUser, signInWithGoogle, setUser, setLoading } =
     useContext(AuthContext);
   const location = useLocation();
-  
+
   const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -17,32 +17,27 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
-    setLoading(true)
+    setLoading(true);
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    // console.log(email, password);
 
     loginUser(email, password)
       .then((result) => {
-        // console.log(result.user);
         setUser(result.user);
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
-        // console.error(error);
         setError(error.message);
       });
   };
 
   const handleGoogleLogin = () => {
-    setLoading(true)
+    setLoading(true);
     signInWithGoogle()
       .then((result) => {
-        // console.log(result.user);
         setUser(result.user);
-        
-        
+
         navigate("/");
       })
       .catch((error) => {

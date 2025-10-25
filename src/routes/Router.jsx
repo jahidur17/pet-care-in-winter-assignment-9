@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 import Terms from "../pages/Terms";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import ForgotPassword from "../pages/ForgotPassword";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -33,14 +34,7 @@ const router = createBrowserRouter([
               </PrivateRoute>
             ),
           },
-          // {
-          //   path: "service/:id",
-          //   element: (
-          //     <PrivateRoute>
-          //       <Service />
-          //     </PrivateRoute>
-          //   ),
-          // },
+          
         ],
       },
       {
@@ -78,7 +72,7 @@ const router = createBrowserRouter([
 
   {
     path: "/*",
-    element: <h1>Error404</h1>,
+    element: <ErrorPage></ErrorPage>,
   },
 ]);
 
