@@ -54,7 +54,11 @@ const Navbar = () => {
     <nav className="bg-white w-11/12 mx-auto shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src={catImg} alt="WarmPaws" className="w-10 h-10" />
+          <img
+            src={catImg}
+            alt="WarmPaws"
+            className="w-10 h-10 rounded-full object-cover"
+          />
 
           <span className="font-bold text-xl text-orange-600">WarmPaws</span>
         </Link>

@@ -7,7 +7,7 @@
     "price": 25,
     "rating": 4.9,
     "slotsAvailable": 4,
-    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "description": "Professional grooming for dogs during winter, including gentle brushing to remove loose hair and tangles, application of moisturizing paw balm to protect against dryness and cracking, and the use of winter-safe shampoo to maintain a healthy, shiny coat. Special attention is given to sensitive areas such as paws, ears, and underbelly to ensure pets stay comfortable, warm, and free from irritation. The grooming session also includes trimming nails, cleaning ears, and optional fur styling tailored to breed and coat type.",
     "image": "https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg",
     "category": "Clothing"
   },
@@ -19,7 +19,7 @@
     "price": 30,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo to prevent dryness.",
+    "description": "Comprehensive winter care for cats, designed to maintain healthy fur and skin throughout the cold months. Includes soft brushing to prevent matting, application of hydrating sprays or conditioners to avoid dryness, and techniques to reduce seasonal shedding. Cats are provided with cozy warm spaces and stress-free handling, ensuring they remain relaxed, warm, and comfortable. The care also emphasizes monitoring for common winter issues such as dry skin, irritated paws, and cold-induced lethargy.",
     "image": "https://images.pexels.com/photos/1174081/pexels-photo-1174081.jpeg",
     "category": "Grooming"
   },
@@ -31,7 +31,7 @@
     "price": 18,
     "rating": 4.7,
     "slotsAvailable": 6,
-    "description": "Soft insulated bedding and heated blankets for small and large pets during cold nights.",
+    "description": "Tailored nutrition guidance for pets during the winter season to boost immunity and maintain optimal energy levels. Includes recommendations for warming meals, high-quality protein and fat sources to prevent weight loss, and seasonal supplements like Omega-3 and vitamins to support skin, coat, and overall health. Advice is also provided on adjusting portion sizes and feeding schedules in response to reduced outdoor activity and lower energy expenditure during cold weather.",
     "image": "https://images.pexels.com/photos/1870301/pexels-photo-1870301.jpeg",
     "category": "Comfort"
   },
@@ -43,7 +43,7 @@
     "price": 22,
     "rating": 4.9,
     "slotsAvailable": 5,
-    "description": "A balanced diet consultation for your pet to boost immunity and maintain energy in winter.",
+    "description": "Comprehensive winter wellness checkup for pets to detect early signs of cold-related ailments. Includes full physical examination, temperature and paw inspections, dental health checks, and review of vaccination status. Focuses on identifying seasonal risks such as frostbite, hypothermia, dry skin, and respiratory issues. Health monitoring recommendations are tailored to each pet’s breed, age, and health history, ensuring they remain active, safe, and healthy throughout the winter season.",
     "image": "https://images.pexels.com/photos/34418146/pexels-photo-34418146.jpeg",
     "category": "Nutrition"
   },
@@ -55,7 +55,7 @@
     "price": 40,
     "rating": 5.0,
     "slotsAvailable": 2,
-    "description": "Full health assessment including fur, paw, and joint care for cold-weather readiness.",
+    "description": "Winter accessory provision for pets, including sweaters, jackets, booties, and blankets made from pet-safe, non-irritating materials. These accessories help maintain body warmth during outdoor walks, travel, or indoor lounging. The selection emphasizes comfort, proper fit, and safety, while also offering style options. Pets are guided gradually to wear clothing comfortably, making them feel secure and protected without restricting movement.",
     "image": "https://media.istockphoto.com/id/1477761171/photo/owner-feeding-her-pet-at-home.jpg?s=1024x1024&w=is&k=20&c=4rTurvvLSlYaZ3PC9YxJPWrBjOEIT9VN35ZSbGyP5dE=",
     "category": "Healthcare"
   },
@@ -67,7 +67,7 @@
     "price": 28,
     "rating": 4.8,
     "slotsAvailable": 3,
-    "description": "Guided snow walk and light winter exercise sessions to keep pets active and safe outdoors.",
+    "description": "Safe and engaging exercise routines for pets during cold weather, including short outdoor walks, indoor play sessions, and mental stimulation games. Activities are designed to maintain fitness, flexibility, and mental sharpness without exposing pets to extreme temperatures. Recommendations include use of interactive toys, obstacle courses, and gentle stretching exercises, ensuring pets remain healthy, active, and entertained even during shorter daylight hours and snow-covered environments.",
     "image": "https://images.pexels.com/photos/34422349/pexels-photo-34422349.jpeg",
     "category": "Training"
   }

@@ -9,8 +9,9 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-2">
             WarmPaws – Pet Care in Winter
           </h3>
+          <h1 className="text-xl font-semibold text-blue-600">Jahidur Rahman</h1>
           <p>Email: jahidurrahman9117@gmail.com</p>
-          <p>Phone: +880 123 456 789</p>
+          <p>Phone: +880 1518 713864</p>
           <p>present-Address: Pabna, Bangladesh</p>
           <p>permanent-Address: Rajshahi, Bangladesh</p>
         </div>

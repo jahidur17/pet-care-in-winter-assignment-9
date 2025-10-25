@@ -12,6 +12,7 @@ import Terms from "../pages/Terms";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import ForgotPassword from "../pages/ForgotPassword";
 import ErrorPage from "../pages/ErrorPage";
+import ServiceDetails from "../pages/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,14 @@ const router = createBrowserRouter([
               </PrivateRoute>
             ),
           },
-          
+          {
+            path: ":id", 
+            element: (
+              <PrivateRoute>
+                <ServiceDetails />
+              </PrivateRoute>
+            ),
+          },
         ],
       },
       {

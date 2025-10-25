@@ -1,5 +1,6 @@
 import React from "react";
 import BookServiceForm from "../components/BookServiceForm";
+import { Outlet } from "react-router";
 
 const Services = () => {
   return (
@@ -9,6 +10,7 @@ const Services = () => {
         Service Details Page
       </h1>
       <BookServiceForm />
+      <Outlet></Outlet>
     </div>
   );
 };

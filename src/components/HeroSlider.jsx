@@ -4,17 +4,24 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import img1 from "../assets/j.jpg";
-import img2 from "../assets/jj.jpg";
-import img3 from "../assets/jjj.jpg";
-import img4 from "../assets/jjjj.jpg";
-
 const HeroSlider = () => {
   const slides = [
-    { img: img1, text: "Keep Your Dog Warm This Winter ❄️" },
-    { img: img2, text: "Soft Jackets for Your Lovely Cats 🐱" },
-    { img: img3, text: "Winter Grooming & Care Packages 🧼" },
-    { img: img4, text: "Winter Nutrition & Health Tips 🍲" },
+    {
+      img: "https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg",
+      text: "Keep Your Dog Warm This Winter ❄️",
+    },
+    {
+      img: "https://images.pexels.com/photos/1870301/pexels-photo-1870301.jpeg",
+      text: "Soft Jackets for Your Lovely Cats 🐱",
+    },
+    {
+      img: "https://images.pexels.com/photos/34418146/pexels-photo-34418146.jpeg",
+      text: "Winter Grooming & Care Packages 🧼",
+    },
+    {
+      img: "https://images.pexels.com/photos/34422349/pexels-photo-34422349.jpeg",
+      text: "Winter Nutrition & Health Tips 🍲",
+    },
   ];
 
   return (
