@@ -27,4 +27,4 @@ Special diets and supplements to maintain energy and immunity in winter.
 3. swiper
 4. react-router-dom, etc.
 
-* My Live Link : https://spontaneous-creponne-965823.netlify.app/
+* My Live Link : https://jade-dasik-4a36fd.netlify.app/
